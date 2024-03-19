@@ -4,27 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
+    <LinearLayout
         android:id="@+id/toolbar"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:contentDescription="@string/dummydesc"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/logo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/macrosoft_blue"
+            android:backgroundTint="@color/macrosoft_blue"
+            android:text="@string/accueil"
+            android:textColorLink="@color/macrosoft_blue"
+            app:iconTint="@color/macrosoft_blue"
+            app:rippleColor="@color/macrosoft_blue" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/connexion"
+            app:iconTint="@color/macrosoft_blue"
+            app:rippleColor="@color/macrosoft_blue" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="41dp"
+        android:background="@color/light_blue"
         android:padding="8dp"
         android:text="@string/footer"
         android:textAlignment="textStart"
+        android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#FAFAFA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -37,6 +81,7 @@
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/dummydesc"
+        android:padding="60dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,27 +90,33 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/title" />
+                android:paddingBottom="25dp"
+                android:text="@string/title"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             <TextView
                 android:id="@+id/name_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/name" />
+                android:text="@string/name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <EditText
                 android:id="@+id/name_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="larry"
                 android:inputType="text"
-                android:hint="larry" />
+                android:minHeight="48dp" />
 
             <TextView
                 android:id="@+id/passwd_label"
@@ -78,9 +129,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="azerty"
                 android:inputType="text"
-                android:password="true"
-                android:hint="azerty" />
+                android:minHeight="48dp"
+                android:password="true" />
 
             <TextView
                 android:id="@+id/confpasswd_label"
@@ -93,15 +145,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="azerty"
                 android:inputType="text"
-                android:password="true"
-                android:hint="azerty" />
+                android:minHeight="48dp"
+                android:password="true" />
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                android:layout_height="100dp"
+                tools:srcCompat="@drawable/captcha" />
 
             <Button
                 android:id="@+id/button"

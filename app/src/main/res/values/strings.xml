@@ -6,5 +6,8 @@
     <string name="passwd">Mot de passe</string>
     <string name="confmdp">Confirmation du mot de passe</string>
     <string name="action">S\'inscrire</string>
+    <string name="logo">HelpDesk</string>
+    <string name="accueil">Accueil</string>
+    <string name="connexion">Connexion</string>
     <string name="dummydesc">dummy</string>
 </resources>
