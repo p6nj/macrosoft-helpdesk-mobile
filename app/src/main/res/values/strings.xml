@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Helpdesk Mobile</string>
+    <string name="footer">2023 – 2024 Macrosoft Helpdesk</string>
+    <string name="title">Inscription</string>
+    <string name="name">Nom d\'utilisateur</string>
+    <string name="passwd">Mot de passe</string>
+    <string name="confmdp">Confirmation du mot de passe</string>
+    <string name="action">S\'inscrire</string>
+    <string name="dummydesc">dummy</string>
 </resources>
